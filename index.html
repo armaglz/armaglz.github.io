@@ -15,6 +15,8 @@
         type="text/css" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
 </head>
 
 <body id="page-top">
@@ -88,7 +90,7 @@
                             <div class="portfolio-item-caption-content text-center text-white"><i
                                     class="fas fa-plus fa-3x"></i></div>
                         </div>
-                        <img class="img-fluid" src="assets/img/portfolio/cake.png" alt="" />
+                        <img class="img-fluid" src="assets/img/portfolio/cabin.png" alt="" />
                     </div>
                 </div>
                 <!-- Portfolio Item 3-->
@@ -140,7 +142,7 @@
                             <div class="portfolio-item-caption-content text-center text-white"><i
                                     class="fas fa-plus fa-3x"></i></div>
                         </div>
-                        <img class="img-fluid" src="assets/img/portfolio/submarine.png" alt="" />
+                        <!-- <img class="img-fluid" src="assets/img/portfolio/submarine.png" alt="" /> -->
                     </div>
                 </div>
             </div>
@@ -233,7 +235,8 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <!-- Portfolio Modal - Title-->
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Tasty Cake</h2>
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Pedigree Tree Maker
+                                </h2>
                                 <!-- Icon Divider-->
                                 <div class="divider-custom">
                                     <div class="divider-custom-line"></div>
@@ -241,10 +244,12 @@
                                     <div class="divider-custom-line"></div>
                                 </div>
                                 <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5"
-                                    src="assets/img/portfolio/cake.png" alt="" /><!-- Portfolio Modal - Text-->
-                                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque
-                                    assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam
-                                    velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+                                    src="assets/img/portfolio/cabin.png" alt="" /><!-- Portfolio Modal - Text-->
+                                <p class="mb-5">Pedigree visualizer was developedon Java Scriptis a toolthat
+                                    helplaboratory research with multiple subject familiesto track diseaseor genotypes
+                                    betweengenerations. This softwareacceptsa format text file and generatedan
+                                    interactivepedigree tree with the given information, calculating position for each
+                                    subject on the images and avoid subject overlapping.
                                 </p>
                                 <button class="btn btn-primary" href="#" data-dismiss="modal"><i
                                         class="fas fa-times fa-fw"></i>Close Window</button>
@@ -275,6 +280,10 @@
                                     <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                     <div class="divider-custom-line"></div>
                                 </div>
+                                <!-- Game enbed -->
+                                <!-- <iframe class="img-fluid rounded mb-5" src="https://i.simmer.io/@drag0n1x/test"
+                                    style="width:960px;height:600px;border:0"></iframe> -->
+
                                 <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5"
                                     src="assets/img/portfolio/circus.png" alt="" /><!-- Portfolio Modal - Text-->
                                 <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque
@@ -347,17 +356,58 @@
                                     <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                     <div class="divider-custom-line"></div>
                                 </div>
-                                <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5"
-                                    src="assets/img/portfolio/mainMenu.png" alt="" /><!-- Portfolio Modal - Text-->
+                                <div class="w3-content w3-display-container">
+                                    <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5  mySlides"
+                                        src="assets/img/portfolio/mainMenu.png" alt="" /><!-- Portfolio Modal - Text-->
+                                    <img class="img-fluid rounded mb-5 mySlides" src="assets/img/portfolio/mainMap.png">
+                                    <img class="img-fluid rounded mb-5 mySlides"
+                                        src="assets/img/portfolio/mainMap2.png">
+                                    <img class="img-fluid rounded mb-5 mySlides"
+                                        src="assets/img/portfolio/hospital.png">
+                                    <img class="img-fluid rounded mb-5 mySlides"
+                                        src="assets/img/portfolio/hospital2.png">
+                                    <img class="img-fluid rounded mb-5 mySlides" src="assets/img/portfolio/escuela.png">
+                                    <img class="img-fluid rounded mb-5 mySlides"
+                                        src="assets/img/portfolio/escuela2.png">
+                                    <img class="img-fluid rounded mb-5 mySlides" src="assets/img/portfolio/store.png">
+
+                                    <button class="w3-button w3-black w3-display-left"
+                                        onclick="plusDivs(-1)">&#10094;</button>
+                                    <button class="w3-button w3-black w3-display-right"
+                                        onclick="plusDivs(1)">&#10095;</button>
+                                </div>
+                                <script>
+                                    var slideIndex = 1;
+                                    showDivs(slideIndex);
+
+                                    function plusDivs(n) {
+                                        showDivs(slideIndex += n);
+                                    }
+
+                                    function showDivs(n) {
+                                        var i;
+                                        var x = document.getElementsByClassName("mySlides");
+                                        if (n > x.length) { slideIndex = 1 }
+                                        if (n < 1) { slideIndex = x.length }
+                                        for (i = 0; i < x.length; i++) {
+                                            x[i].style.display = "none";
+                                        }
+                                        x[slideIndex - 1].style.display = "block";
+                                    }
+                                </script>
+
                                 <p class="mb-5">
 
-                                    Anti Dichromatic is video game develop in Unity Using C#. This game is a Top Down
+                                    Anti Dichromatic is video game develop in Unity Using C#. This game is a Top
+                                    Down
                                     shotter with minigames.
-                                    In Anti Dichromatic an alien spaceship com to a little town and black shade all of
+                                    In Anti Dichromatic an alien spaceship com to a little town and black shade all
+                                    of
                                     it. The player objective is explore the town and clear a mini game for each main
                                     building in
                                     town to stop the alien invasion.
-                                    In this project i was in charge of the develop of Mini-Games, the Main Area Events
+                                    In this project i was in charge of the develop of Mini-Games, the Main Area
+                                    Events
                                     and
                                     teh UI
 
@@ -386,49 +436,28 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <!-- Portfolio Modal - Title-->
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Submarine</h2>
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Game</h2>
                                 <!-- Icon Divider-->
-
-                                <head>
-                                    <meta charset="utf-8">
-                                    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-                                    <title>Unity WebGL Player | Dichromatic</title>
-                                    <link rel="shortcut icon" href="TemplateData/favicon.ico">
-                                    <link rel="stylesheet" href="TemplateData/style.css">
-                                    <script src="TemplateData/UnityProgress.js"></script>
-                                    <script src="Build/UnityLoader.js"></script>
-                                    <script>
-                                        var unityInstance = UnityLoader.instantiate("unityContainer", "Build/Anti Dichromatic.json", { onProgress: UnityProgress });
-                                    </script>
-                                </head>
-
-                                <body>
-                                    <div class="webgl-content">
-                                        <div id="unityContainer" style="width: 960px; height: 600px"></div>
-                                        <div class="footer">
-                                            <div class="webgl-logo"></div>
-                                            <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
-                                            <div class="title">Dichromatic</div>
-                                        </div>
-                                    </div>
-                                </body>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Bootstrap core JS-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <!-- Third party plugin JS-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-    <!-- Contact form JS-->
-    <script src="assets/mail/jqBootstrapValidation.js"></script>
-    <script src="assets/mail/contact_me.js"></script>
-    <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
+</body>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Bootstrap core JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+<!-- Third party plugin JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<!-- Contact form JS-->
+<script src="assets/mail/jqBootstrapValidation.js"></script>
+<script src="assets/mail/contact_me.js"></script>
+<!-- Core theme JS-->
+<script src="js/scripts.js"></script>
 </body>
 
 </html>
