@@ -78,7 +78,7 @@
                             <div class="portfolio-item-caption-content text-center text-white"><i
                                     class="fas fa-plus fa-3x"></i></div>
                         </div>
-                        <img class="img-fluid" src="assets/img/portfolio/pedT - Copy.png" alt="" />
+                        <img class="img-fluid" src="assets/img/portfolio/pedT.png" alt="" />
                     </div>
                 </div>
                 <!-- Portfolio Item 2-->
@@ -89,7 +89,7 @@
                             <div class="portfolio-item-caption-content text-center text-white"><i
                                     class="fas fa-plus fa-3x"></i></div>
                         </div>
-                        <img class="img-fluid" src="assets/img/portfolio/mainMenu - Copy.png" alt="" />
+                        <img class="img-fluid" src="assets/img/portfolio/mainMenu.png" alt="" />
                     </div>
                 </div>
                 <!-- Portfolio Item 3-->
@@ -100,7 +100,7 @@
                             <div class="portfolio-item-caption-content text-center text-white"><i
                                     class="fas fa-plus fa-3x"></i></div>
                         </div>
-                        <img class="img-fluid" src="assets/img/portfolio/featuremandf - Copy.png" alt="" />
+                        <img class="img-fluid" src="assets/img/portfolio/MAF_IMAGE.png" alt="" />
                     </div>
                 </div>
                 <!-- Portfolio Section Heading-->
@@ -127,13 +127,13 @@
                 </div>
                 <!-- Portfolio Item 5-->
                 <div class=" col-md-6 col-lg-4 mb-5 mb-md-0">
-                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal5">
+                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
                         <div
                             class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                             <div class="portfolio-item-caption-content text-center text-white"><i
                                     class="fas fa-plus fa-3x"></i></div>
                         </div>
-                        <!-- <img class="img-fluid" src="assets/img/portfolio/mainMenu.png" alt="" /> -->
+                        <img class="img-fluid" src="assets/img/portfolio/tfp (4).png" alt="" />
                     </div>
                 </div>
                 <!-- Portfolio Item 6-->
@@ -284,23 +284,64 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <!-- Portfolio Modal - Title-->
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Circus Tent</h2>
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Anti Dichromatic
+                                </h2>
                                 <!-- Icon Divider-->
                                 <div class="divider-custom">
                                     <div class="divider-custom-line"></div>
                                     <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                     <div class="divider-custom-line"></div>
                                 </div>
-                                <!-- Game enbed -->
-                                <!-- <iframe class="img-fluid rounded mb-5" src="https://i.simmer.io/@drag0n1x/test"
-                                    style="width:960px;height:600px;border:0"></iframe> -->
+                                <div class="w3-content w3-display-container">
+                                    <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5  mySlidesTDP"
+                                        src="assets/img/portfolio/tfp (1).png" alt="" /><!-- Portfolio Modal - Text-->
+                                    <img class="img-fluid rounded mb-5 mySlidesTDP"
+                                        src="assets/img/portfolio/tfp (2).png">
+                                    <img class="img-fluid rounded mb-5 mySlidesTDP"
+                                        src="assets/img/portfolio/tfp (3).png">
 
-                                <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5"
-                                    src="assets/img/portfolio/circus.png" alt="" /><!-- Portfolio Modal - Text-->
+                                    <img class="img-fluid rounded mb-5 mySlidesTDP"
+                                        src="assets/img/portfolio/tfp (4).png">
+
+                                    <button class="w3-button w3-black w3-display-left"
+                                        onclick="plusDivsTD(-1)">&#10094;</button>
+                                    <button class="w3-button w3-black w3-display-right"
+                                        onclick="plusDivsTD(1)">&#10095;</button>
+                                </div>
+                                <script>
+                                    var slideIndexTD = 1;
+                                    showDivsTD(slideIndexTD);
+
+                                    function plusDivsTD(nTD) {
+                                        showDivsTD(slideIndexTD += nTD);
+                                    }
+
+                                    function showDivsTD(nTD) {
+                                        var iTD;
+                                        var xTD = document.getElementsByClassName("mySlidesTDP");
+                                        if (nTD > xTD.length) { slideIndexTD = 1 }
+                                        if (nTD < 1) { slideIndexTD = xTD.length }
+                                        for (iTD = 0; iTD < xTD.length; iTD++) {
+                                            xTD[iTD].style.display = "none";
+                                        }
+                                        xTD[slideIndexTD - 1].style.display = "block";
+                                    }
+                                </script>
+
                                 <p class="mb-5">
+
+                                    This project is a small Towe Defense prototype made in Unity using C# for Windows
+                                    computers, where the player can build and upgrade two types of towers with the
+                                    game
+                                    currency. The towers automatically
+                                    attack wawes of three types of enemies that will try to attack the player power
+                                    core.
+
                                 </p>
-                                <button class="btn btn-primary" href="#" data-dismiss="modal"><i
-                                        class="fas fa-times fa-fw"></i>Close Window</button>
+                                <button class="btn btn-primary"
+                                    onclick="window.location.href ='https://1drv.ms/u/s!Aj2sWGnKBNCNgQGYPn-I0jk1jH69?e=hJOvbd';"><i></i>Download</button>
+                                <!-- <button class="btn btn-primary" href="#" data-dismiss="modal"><i
+                                        class="fas fa-times fa-fw"></i>Close Window</button> -->
                             </div>
                         </div>
                     </div>
@@ -329,8 +370,44 @@
                                     <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                     <div class="divider-custom-line"></div>
                                 </div>
-                                <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5"
-                                    src="assets/img/portfolio/featuremandf.png" alt="" /><!-- Portfolio Modal - Text-->
+                                <div class="w3-content w3-display-container">
+                                    <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5  mySlidesMF"
+                                        src="assets/img/portfolio/MF (2).png" alt="" /><!-- Portfolio Modal - Text-->
+                                    <img class="img-fluid rounded mb-5 mySlidesMF"
+                                        src="assets/img/portfolio/MF (1).png">
+                                    <img class="img-fluid rounded mb-5 mySlidesMF"
+                                        src="assets/img/portfolio/MF (3).png">
+
+                                    <img class="img-fluid rounded mb-5 mySlidesMF"
+                                        src="assets/img/portfolio/MF (4).png">
+
+                                    <button class="w3-button w3-black w3-display-left"
+                                        onclick="plusDivsMF(-1)">&#10094;</button>
+                                    <button class="w3-button w3-black w3-display-right"
+                                        onclick="plusDivsMF(1)">&#10095;</button>
+                                </div>
+                                <script>
+                                    var slideIndexMF = 1;
+                                    showDivsMF(slideIndexMF);
+
+                                    function plusDivsMF(n) {
+                                        showDivsMF(slideIndexMF += n);
+                                    }
+
+                                    function showDivsMF(n) {
+                                        var i;
+                                        var x = document.getElementsByClassName("mySlidesMF");
+                                        if (n > x.length) { slideIndexMF = 1 }
+                                        if (n < 1) { slideIndexMF = x.length }
+                                        for (i = 0; i < x.length; i++) {
+                                            x[i].style.display = "none";
+                                        }
+                                        x[slideIndexMF - 1].style.display = "block";
+                                    }
+                                </script>
+
+
+
                                 <p class="mb-5">“Math and Fantasy”is mobile game made with Unity using
                                     C# for android devices. This game is an Arcade game where the player must resolve
                                     basic math problems to get point, while different enemies appear on the screen and
