@@ -286,7 +286,7 @@
         aria-labelledby="portfolioModal3Label" aria-hidden="true">
         <div class="modal-dialog modal-xl" role="document">
             <div class="modal-content">
-                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                <button onClick="pauseVid()" class="close" type="button" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true"><i class="fas fa-times"></i></span>
                 </button>
                 <div class="modal-body text-center">
@@ -304,8 +304,9 @@
                                     <div class="divider-custom-line"></div>
                                 </div>
                                 <div class="w3-content w3-display-container">
-                                    <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5  mySlidesTDP"
-                                        src="assets/img/portfolio/tfp (1).png" alt="" /><!-- Portfolio Modal - Text-->
+                                    <video id="TdV" class="img-fluid rounded mb-5 mySlidesTDP" controls>
+                                        <source src="assets/video/2020-08-31 19-10-02.mp4" type="video/mp4">
+                                    </video>
                                     <img class="img-fluid rounded mb-5 mySlidesTDP"
                                         src="assets/img/portfolio/tfp (2).png">
                                     <img class="img-fluid rounded mb-5 mySlidesTDP"
@@ -313,14 +314,14 @@
 
                                     <img class="img-fluid rounded mb-5 mySlidesTDP"
                                         src="assets/img/portfolio/tfp (4).png">
-
                                     <button class="w3-button w3-black w3-display-left"
-                                        onclick="plusDivsTD(-1)">&#10094;</button>
+                                        onclick="plusDivsTD(-1);pauseVid();">&#10094;</button>
                                     <button class="w3-button w3-black w3-display-right"
-                                        onclick="plusDivsTD(1)">&#10095;</button>
+                                        onclick="plusDivsTD(1); pauseVid();">&#10095;</button>
                                 </div>
                                 <script>
                                     var slideIndexTD = 1;
+
                                     showDivsTD(slideIndexTD);
 
                                     function plusDivsTD(nTD) {
@@ -337,6 +338,17 @@
                                         }
                                         xTD[slideIndexTD - 1].style.display = "block";
                                     }
+
+
+
+                                    function playVid() {
+                                        vid.play();
+                                    }
+
+                                    function pauseVid() {
+                                        var vid = document.getElementById("TdV");
+                                        vid.pause();
+                                    } 
                                 </script>
 
                                 <p class="mb-5">
