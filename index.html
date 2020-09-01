@@ -338,15 +338,9 @@
                                         }
                                         xTD[slideIndexTD - 1].style.display = "block";
                                     }
-
-
-
-                                    function playVid() {
-                                        vid.play();
-                                    }
+                                    var vid = document.getElementById("TdV");
 
                                     function pauseVid() {
-                                        var vid = document.getElementById("TdV");
                                         vid.pause();
                                     } 
                                 </script>
@@ -453,7 +447,7 @@
         aria-labelledby="portfolioModal5Label" aria-hidden="true">
         <div class="modal-dialog modal-xl" role="document">
             <div class="modal-content">
-                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                <button onclick="pauseVidAD()" class=" close" type="button" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true"><i class="fas fa-times"></i></span>
                 </button>
                 <div class="modal-body text-center">
@@ -461,7 +455,8 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <!-- Portfolio Modal - Title-->
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Anti Dichromatic
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Anti
+                                    Dichromatic
                                 </h2>
                                 <!-- Icon Divider-->
                                 <div class="divider-custom">
@@ -470,8 +465,9 @@
                                     <div class="divider-custom-line"></div>
                                 </div>
                                 <div class="w3-content w3-display-container">
-                                    <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5  mySlides"
-                                        src="assets/img/portfolio/mainMenu.png" alt="" /><!-- Portfolio Modal - Text-->
+                                    <video id="AdV" class="img-fluid rounded mb-5 mySlides" controls>
+                                        <source src="assets/video/2020-08-31 19-40-08_Trim.mp4" type="video/mp4">
+                                    </video>
                                     <img class="img-fluid rounded mb-5 mySlides" src="assets/img/portfolio/mainMap.png">
                                     <img class="img-fluid rounded mb-5 mySlides"
                                         src="assets/img/portfolio/mainMap2.png">
@@ -485,9 +481,9 @@
                                     <img class="img-fluid rounded mb-5 mySlides" src="assets/img/portfolio/police2.png">
 
                                     <button class="w3-button w3-black w3-display-left"
-                                        onclick="plusDivs(-1)">&#10094;</button>
+                                        onclick="plusDivs(-1); pauseVidAD()">&#10094;</button>
                                     <button class="w3-button w3-black w3-display-right"
-                                        onclick="plusDivs(1)">&#10095;</button>
+                                        onclick="plusDivs(1); pauseVidAD()">&#10095;</button>
                                 </div>
                                 <script>
                                     var slideIndex = 1;
@@ -506,6 +502,11 @@
                                             x[i].style.display = "none";
                                         }
                                         x[slideIndex - 1].style.display = "block";
+                                    }
+
+                                    function pauseVidAD() {
+                                        var vid = document.getElementById("AdV");
+                                        vid.pause();
                                     }
                                 </script>
 
