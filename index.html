@@ -121,13 +121,13 @@
 
                 <!-- Portfolio Item 4-->
                 <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
-                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
+                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
                         <div
                             class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                             <div class="portfolio-item-caption-content text-center text-white"><i
                                     class="fas fa-plus fa-3x"></i></div>
                         </div>
-                        <!-- <img class="img-fluid" src="assets/img/portfolio/featuremandf.png" alt="" /> -->
+                        <img class="img-fluid" src="assets/img/portfolio/opinionBox_userBoboxes.png" alt="" />
                     </div>
                 </div>
                 <!-- Portfolio Item 5-->
@@ -205,6 +205,86 @@
                 class="fa fa-chevron-up"></i></a>
     </div>
     <!-- Portfolio Modals-->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog"
+        aria-labelledby="portfolioModal3Label" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <button onClick="pauseVid()" class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                </button>
+                <div class="modal-body text-center">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Tower Defense
+                                    prototype
+                                </h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <div class="w3-content w3-display-container">
+                                    <img class="img-fluid rounded mb-5 mySlidesBO"
+                                        src="assets/img/portfolio/opinion_Box_home.png">
+                                    <img class="img-fluid rounded mb-5 mySlidesBO"
+                                        src="assets/img/portfolio/opinionBox_userBoboxes.png">
+
+                                    <img class="img-fluid rounded mb-5 mySlidesBO"
+                                        src="assets/img/portfolio/opinionBox_opinions.png">
+                                    <img class="img-fluid rounded mb-5 mySlidesBO"
+                                        src="assets/img/portfolio/opinionBox_SendOpinion.png">
+                                    <img class="img-fluid rounded mb-5 mySlidesBO"
+                                        src="assets/img/portfolio/opinionBox_opinionSend.png">
+
+                                    <button class="w3-button w3-black w3-display-left"
+                                        onclick="plusDivsBO(-1);">&#10094;</button>
+                                    <button class="w3-button w3-black w3-display-right"
+                                        onclick="plusDivsBO(1);">&#10095;</button>
+                                </div>
+                                <script>
+                                    var slideIndexBO = 1;
+
+                                    showDivsBO(slideIndexBO);
+
+                                    function plusDivsBO(nBO) {
+                                        showDivsBO(slideIndexBO += nBO);
+                                    }
+
+                                    function showDivsBO(nBO) {
+                                        var iBO;
+                                        var xBO = document.getElementsByClassName("mySlidesBO");
+                                        if (nBO > xBO.length) { slideIndexBO = 1 }
+                                        if (nBO < 1) { slideIndexBO = xBO.length }
+                                        for (iBO = 0; iBO < xBO.length; iBO++) {
+                                            xBO[iBO].style.display = "none";
+                                        }
+                                        xBO[slideIndexBO - 1].style.display = "block";
+                                    }
+                                </script>
+
+                                <p class="mb-5">
+                                    Opinion Box is a website made using JavaScript and Express.JS. Opinion Box lets the
+                                    users make a virtual opinion box that can easily be shared with their
+                                    clients/employees/students to receive opinions on their service. This website is
+                                    looking to solve an old problem with modern solutions, bringing opinion boxes in a
+                                    virtual environment without the need for the user to have their website.
+
+                                </p>
+                                <button class="btn btn-primary"
+                                    onclick="window.location.href ='https://opinion-box.herokuapp.com/';"><i></i>Make
+                                    a Box</button>
+                                <!-- <button class="btn btn-primary" href="#" data-dismiss="modal"><i
+                                    class="fas fa-times fa-fw"></i>Close Window</button> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Portfolio Modal 1-->
     <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog"
         aria-labelledby="portfolioModal2Label" aria-hidden="true">
@@ -392,15 +472,26 @@
                                     <div class="divider-custom-line"></div>
                                 </div>
                                 <div class="w3-content w3-display-container">
-                                    <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5  mySlidesMF"
-                                        src="assets/img/portfolio/MF (2).png" alt="" /><!-- Portfolio Modal - Text-->
-                                    <img class="img-fluid rounded mb-5 mySlidesMF"
-                                        src="assets/img/portfolio/MF (1).png">
-                                    <img class="img-fluid rounded mb-5 mySlidesMF"
-                                        src="assets/img/portfolio/MF (3).png">
 
-                                    <img class="img-fluid rounded mb-5 mySlidesMF"
-                                        src="assets/img/portfolio/MF (4).png">
+                                    <img class="img-fluid rounded mb-5 mySlidesMF " width="200" height="190"
+                                        style="display:block; margin:auto;" src="assets/img/portfolio/MaF_Menu (1).jpg">
+                                    <img class="img-fluid rounded mb-5 mySlidesMF " width="200" height="190"
+                                        style="display:block; margin:auto;" src="assets/img/portfolio/MaF_Menu (2).jpg">
+                                    <img class="img-fluid rounded mb-5 mySlidesMF " width="200" height="190"
+                                        style="display:block; margin:auto;"
+                                        src="assets/img/portfolio/MaF_Monster (1).jpg">
+                                    <img class="img-fluid rounded mb-5 mySlidesMF " width="200" height="190"
+                                        style="display:block; margin:auto;"
+                                        src="assets/img/portfolio/MaF_Monster (2).jpg">
+                                    <img class="img-fluid rounded mb-5 mySlidesMF " width="200" height="190"
+                                        style="display:block; margin:auto;"
+                                        src="assets/img/portfolio/MaF_Monster (3).jpg">
+                                    <img class="img-fluid rounded mb-5 mySlidesMF " width="200" height="190"
+                                        style="display:block; margin:auto;"
+                                        src="assets/img/portfolio/MaF_Monster (4).jpg">
+                                    <img class="img-fluid rounded mb-5 mySlidesMF " width="200" height="190"
+                                        style="display:block; margin:auto;"
+                                        src="assets/img/portfolio/MaF_Monster (5).jpg">
 
                                     <button class="w3-button w3-black w3-display-left"
                                         onclick="plusDivsMF(-1)">&#10094;</button>
@@ -427,15 +518,13 @@
                                     }
                                 </script>
 
-
-
                                 <p class="mb-5">“Math and Fantasy”is mobile game made with Unity using
-                                    C# for android devices. This game is an Arcade game where the player must resolve
-                                    basic math problems to get point, while different enemies appear on the screen and
-                                    modify the visual of the options(Update on Google Play Revision)
+                                    C# for android devices, Publish on Google Play and recive updates acording to the
+                                    users feedback. This game is an Arcade game where
+                                    the player must resolve
+                                    basic math problems to get points, while different enemies appear on the screen and
+                                    modify the visual of the options.
                                 </p>
-                                <!-- <button class="btn btn-primary"
-                                    onclick="window.location.href ='https://play.google.com/store/apps/details?id=com.armaglz.MathandFantasy' ;"><i></i>Play</button> -->
                                 <a href="https://play.google.com/store/apps/details?id=com.armaglz.MathandFantasyv2"
                                     target="_blank" rel="noopener noreferrer" style="width:50px;height:100px;"><img
                                         src="assets/img/portfolio/google.png"></a>
